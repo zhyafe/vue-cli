@@ -1,24 +1,18 @@
 # vue-cli
 
-## Project setup
-```
-yarn install
-```
+### 数据
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+- data
+- computed
+- watch
 
-### Compiles and minifies for production
-```
-yarn build
-```
+### 方法
 
-### Lints and fixes files
-```
-yarn lint
-```
+- method
+- 生命周期
+- mixins
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 其他
+
+- props
+- component
