@@ -1,20 +1,21 @@
 <template>
   <div id="app">
     <!-- <HelloWorld msg="props data"/> -->
-    <Statement />
+    <!-- <Statement /> -->
+    <Template />
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld";
-import Statement from "./statement/Index";
+import Template from "./template/Index";
 
 export default {
   name: "App",
   components: {
     // eslint-disable-next-line vue/no-unused-components
     HelloWorld,
-    Statement,
+    Template,
   },
 };
 </script>
