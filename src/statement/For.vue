@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>for</p>
+    <h3>for 循环语句</h3>
     <div v-for="item in data" v-bind:key="item.id" v-on:click="onClickItem">
       {{ item.name }}
     </div>

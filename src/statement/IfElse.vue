@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>if else</p>
+    <h3>if else 条件语句</h3>
     <div v-if="flag == 1">flag 1:{{ flag }}</div>
     <div v-else-if="flag == 2">flag 2:{{ flag }}</div>
     <div v-else>flag other:{{ flag }}</div>

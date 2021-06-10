@@ -1,9 +1,7 @@
 <template>
   <div>
-    <p>流程语句</p>
-    <p>------------</p>
+    <h2>流程语句</h2>
     <IfElse />
-    <p>------------</p>
     <For />
   </div>
 </template>
