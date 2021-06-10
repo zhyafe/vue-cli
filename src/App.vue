@@ -2,20 +2,23 @@
   <div id="app">
     <!-- <HelloWorld msg="props data"/> -->
     <!-- <Statement /> -->
-    <Template />
+    <!-- <Template /> -->
+    <ComputedWatch />
   </div>
 </template>
 
 <script>
+/* eslint-disable vue/no-unused-components */
 import HelloWorld from "./components/HelloWorld";
 import Template from "./template/Index";
+import ComputedWatch from "./computedWatch/Index";
 
 export default {
   name: "App",
   components: {
-    // eslint-disable-next-line vue/no-unused-components
     HelloWorld,
     Template,
+    ComputedWatch,
   },
 };
 </script>
