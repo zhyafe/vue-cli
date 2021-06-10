@@ -25,7 +25,7 @@ export default {
   },
 
   mounted() {
-    console.log("data", this.listData, this);
+    console.log("data", this.listData, this, this.$attrs.notProps);
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>组件</h3>
-    <Props :listData="listData" />
+    <Props :listData="listData" :notProps="listData" />
     <!-- <Style /> -->
   </div>
 </template>
