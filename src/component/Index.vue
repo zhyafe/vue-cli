@@ -2,7 +2,8 @@
   <div>
     <h3>组件</h3>
     <Props :listData="listData" :notProps="listData" />
-    <!-- <Style /> -->
+    <p>------------</p>
+    <CustomEvent v-bind:count="count" @on-setcount="setCount" />
   </div>
 </template>
 
@@ -10,16 +11,23 @@
 /* eslint-disable vue/no-unused-components */
 import utils from "../utils";
 import Props from "./Props.vue";
-// import Style from "./Style.vue";
+import CustomEvent from "./CustomEvent.vue";
 export default {
   data: function() {
     return {
       listData: utils.getList(),
+      count: 23,
     };
   },
   components: {
     Props,
-    // Style,
+    CustomEvent,
+  },
+
+  methods: {
+    setCount: function(count) {
+      this.count = count;
+    },
   },
 };
 </script>

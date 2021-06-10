@@ -1,31 +1,17 @@
 <template>
   <div>
-    <p>class</p>
+    <p>props</p>
   </div>
 </template>
 
 <script>
 export default {
   props: ["listData"],
-  data: function() {
-    return {
-      dataClass: "defaultClass",
-      unitPrice: 2,
-    };
+  data() {
+    return {};
   },
-  computed: {
-    total: function() {
-      return this.count * this.unitPrice;
-    },
-  },
-  methods: {
-    onChangeClass: function() {
-      this.dataClass = "darkClass";
-    },
-  },
-
   mounted() {
-    console.log("data", this.listData, this, this.$attrs.notProps);
+    console.log("props-data", this.listData, this, this.$attrs.notProps);
   },
 };
 </script>
