@@ -3,7 +3,7 @@
     <!-- <HelloWorld msg="props data"/> -->
     <!-- <Statement /> -->
     <!-- <Template /> -->
-    <ComputedWatch />
+    <!-- <ComputedWatch /> -->
   </div>
 </template>
 
