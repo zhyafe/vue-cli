@@ -1,27 +1,26 @@
 <template>
   <div id="app">
-    <!-- <HelloWorld msg="props data"/> -->
-    <!-- <Statement /> -->
     <!-- <Template /> -->
     <!-- <ComputedWatch /> -->
-    <ClassStyle />
+    <!-- <ClassStyle /> -->
+    <Components />
   </div>
 </template>
 
 <script>
 /* eslint-disable vue/no-unused-components */
-import HelloWorld from "./components/HelloWorld";
 import Template from "./template/Index";
 import ComputedWatch from "./computedWatch/Index";
 import ClassStyle from "./classStyle/Index";
+import Components from "./component/Index";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     Template,
     ComputedWatch,
     ClassStyle,
+    Components,
   },
 };
 </script>

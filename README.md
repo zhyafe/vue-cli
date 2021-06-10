@@ -12,7 +12,7 @@
 - 生命周期
 - mixins
 
-### 其他
+### 组件相关
 
 - props
 - component
