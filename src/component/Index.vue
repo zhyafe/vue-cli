@@ -4,6 +4,8 @@
     <Props :listData="listData" :notProps="listData" />
     <p>------------</p>
     <CustomEvent v-bind:count="count" @on-setcount="setCount" />
+    <p>----------</p>
+    <CustomModel />
   </div>
 </template>
 
@@ -12,6 +14,7 @@
 import utils from "../utils";
 import Props from "./Props.vue";
 import CustomEvent from "./CustomEvent.vue";
+import CustomModel from "./CustomModel.vue";
 export default {
   data: function() {
     return {
@@ -22,6 +25,7 @@ export default {
   components: {
     Props,
     CustomEvent,
+    CustomModel,
   },
 
   methods: {
