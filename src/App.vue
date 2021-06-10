@@ -4,6 +4,7 @@
     <!-- <Statement /> -->
     <!-- <Template /> -->
     <!-- <ComputedWatch /> -->
+    <ClassStyle />
   </div>
 </template>
 
@@ -12,6 +13,7 @@
 import HelloWorld from "./components/HelloWorld";
 import Template from "./template/Index";
 import ComputedWatch from "./computedWatch/Index";
+import ClassStyle from "./classStyle/Index";
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
     HelloWorld,
     Template,
     ComputedWatch,
+    ClassStyle,
   },
 };
 </script>

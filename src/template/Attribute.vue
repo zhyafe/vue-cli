@@ -23,10 +23,10 @@ export default {
 <style>
 .light {
   background: #fff;
-  color: "#666";
+  color: #666;
 }
 .dark {
   background: #666;
-  color: "#fff";
+  color: #fff;
 }
 </style>
