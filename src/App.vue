@@ -4,7 +4,8 @@
     <!-- <ComputedWatch /> -->
     <!-- <ClassStyle /> -->
     <!-- <Components /> -->
-    <MixinReuse />
+    <!-- <MixinReuse /> -->
+    <TransitionAnimate />
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import ComputedWatch from "./computedWatch/Index";
 import ClassStyle from "./classStyle/Index";
 import Components from "./component/Index";
 import MixinReuse from "./reuse/Index";
+import TransitionAnimate from "./transitionAnimate/Index";
 
 export default {
   name: "App",
@@ -24,6 +26,7 @@ export default {
     ClassStyle,
     Components,
     MixinReuse,
+    TransitionAnimate,
   },
 };
 </script>
