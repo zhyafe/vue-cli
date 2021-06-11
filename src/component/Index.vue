@@ -7,13 +7,14 @@
     <p>----------</p>
     <CustomModel v-model="demo" /><button @click="getCoustomModel">
       获取自定义model值
-    </button> -->
+    </button>
     <p>----------</p>
-    <Slot>
+    <SlotComponent>
       <p>xxxx</p>
       <template v-slot:header>header</template>
       <p>aaa</p>
-    </Slot>
+    </SlotComponent> -->
+    <DynamicAsync />
   </div>
 </template>
 
@@ -23,7 +24,8 @@ import utils from "../utils";
 import Props from "./Props.vue";
 import CustomEvent from "./CustomEvent.vue";
 import CustomModel from "./CustomModel.vue";
-import Slot from "./Slot.vue";
+import SlotComponent from "./Slot.vue";
+import DynamicAsync from "./DynamicAsync.vue";
 export default {
   data: function() {
     return {
@@ -36,7 +38,8 @@ export default {
     Props,
     CustomEvent,
     CustomModel,
-    Slot,
+    SlotComponent,
+    DynamicAsync,
   },
 
   methods: {

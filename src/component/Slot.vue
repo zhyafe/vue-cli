@@ -2,11 +2,11 @@
   <div>
     <h3>插槽slot</h3>
     <p>header插槽:</p>
-    <slot name="header">header插槽显示默认内容</slot>
+    <slot name="header"><p>header插槽显示默认内容</p></slot>
     <p>默认插槽:</p>
-    <slot>默认插槽显示默认内容</slot>
+    <slot><p>默认插槽显示默认内容</p></slot>
     <p>footer插槽:</p>
-    <slot name="footer">footer插槽显示默认内容</slot>
+    <slot name="footer"><p>footer插槽显示默认内容</p></slot>
   </div>
 </template>
 

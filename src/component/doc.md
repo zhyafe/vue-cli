@@ -44,3 +44,10 @@ v-model 是 v-bind 和 v-on 配合使用的语法糖；
 3. 具名插槽
    - 在字组件中 <slot name:header>default</slot>
    - 在父组件中是使用 template 标签包括内容，template 标签加 v-slot:header 属性指定插槽
+
+### 动态组件
+
+1. <component :is="">
+2. :is 的值取自 data; 要定义 data
+3. 可通过计算属性获取组件名
+4. 如果要保留组件的状态，可以用 <keep-alive></keep-alive>包裹动态组件
