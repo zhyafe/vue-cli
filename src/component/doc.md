@@ -32,3 +32,15 @@ v-model 是 v-bind 和 v-on 配合使用的语法糖；
 
 2. 设置 props 接收属性
 3. 在组件内触发事件 `this.$emit("setdemo", Date.now());` 更新值
+
+### 插槽 slot
+
+插槽实现内容分发的 api;
+
+1. 默认使用
+   - 在组件内添加`<slot></slot>`
+   - 父组件中添加的内容会替代 slot
+2. 添加默认显示：可以在<slot>默认值</slot>内写默认值，父组件不传值时显示
+3. 具名插槽
+   - 在字组件中 <slot name:header>default</slot>
+   - 在父组件中是使用 template 标签包括内容，template 标签加 v-slot:header 属性指定插槽

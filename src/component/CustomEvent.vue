@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>自定义事件 count：{{ count }}</p>
+    <h3>自定义事件 count：{{ count }}</h3>
     <button @click="onClickBtn">更新count</button>
   </div>
 </template>

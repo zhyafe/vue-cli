@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>自定义事件 model：{{ demo }}</p>
+    <h3>自定义事件 model：{{ demo }}</h3>
     <input
       v-bind:value="valuea"
       v-on:input="valuea = $event.target.value"

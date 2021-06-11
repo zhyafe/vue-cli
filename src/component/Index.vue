@@ -1,13 +1,19 @@
 <template>
   <div>
     <h3>组件</h3>
-    <Props :listData="listData" :notProps="listData" />
+    <!-- <Props :listData="listData" :notProps="listData" />
     <p>------------</p>
     <CustomEvent v-bind:count="count" @on-setcount="setCount" />
     <p>----------</p>
     <CustomModel v-model="demo" /><button @click="getCoustomModel">
       获取自定义model值
-    </button>
+    </button> -->
+    <p>----------</p>
+    <Slot>
+      <p>xxxx</p>
+      <template v-slot:header>header</template>
+      <p>aaa</p>
+    </Slot>
   </div>
 </template>
 
@@ -17,6 +23,7 @@ import utils from "../utils";
 import Props from "./Props.vue";
 import CustomEvent from "./CustomEvent.vue";
 import CustomModel from "./CustomModel.vue";
+import Slot from "./Slot.vue";
 export default {
   data: function() {
     return {
@@ -29,6 +36,7 @@ export default {
     Props,
     CustomEvent,
     CustomModel,
+    Slot,
   },
 
   methods: {
