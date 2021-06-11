@@ -1,7 +1,8 @@
 <template>
   <div>
     <h3>复用</h3>
-    <MixinReuse />
+    <!-- <MixinReuse /> -->
+    <CustomDirective />
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 /* eslint-disable vue/no-unused-components */
 import utils from "../utils";
 import MixinReuse from "./MixinReuse.vue";
+import CustomDirective from "./CustomDirective.vue";
 export default {
   data: function() {
     return {
@@ -17,6 +19,7 @@ export default {
   },
   components: {
     MixinReuse,
+    CustomDirective,
   },
 
   methods: {},
