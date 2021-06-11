@@ -5,7 +5,9 @@
     <p>------------</p>
     <CustomEvent v-bind:count="count" @on-setcount="setCount" />
     <p>----------</p>
-    <CustomModel />
+    <CustomModel v-model="demo" /><button @click="getCoustomModel">
+      获取自定义model值
+    </button>
   </div>
 </template>
 
@@ -20,6 +22,7 @@ export default {
     return {
       listData: utils.getList(),
       count: 23,
+      demo: "xxx",
     };
   },
   components: {
@@ -31,6 +34,9 @@ export default {
   methods: {
     setCount: function(count) {
       this.count = count;
+    },
+    getCoustomModel() {
+      console.log("cousomModel", this.demo);
     },
   },
 };

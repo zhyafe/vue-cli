@@ -1,17 +1,27 @@
 <template>
   <div>
-    <p>自定义事件 count：{{ count }}</p>
-    <button @click="onClickBtn">更新count</button>
+    <p>自定义事件 model：{{ demo }}</p>
+    <input
+      v-bind:value="valuea"
+      v-on:input="valuea = $event.target.value"
+    /><br />
+    <button @click="aa">更新model</button>
+    <!-- v-model -->
   </div>
 </template>
 
 <script>
 export default {
-  props: ["count"],
+  props: ["demo"],
+  model: {
+    event: "setdemo",
+    prop: "demo",
+  },
   data: function() {
     return {
       dataClass: "defaultClass",
       unitPrice: 2,
+      valuea: "22",
     };
   },
   computed: {
@@ -20,8 +30,9 @@ export default {
     },
   },
   methods: {
-    onClickBtn: function() {
-      this.$emit("on-setcount", Date.now());
+    aa: function() {
+      console.log("v-model实质", this.valuea);
+      this.$emit("setdemo", Date.now());
     },
   },
 };

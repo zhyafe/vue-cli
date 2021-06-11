@@ -10,8 +10,25 @@
 
 可以在 `this.$attrs` 中获取到
 
-## 自定义事件
+### 自定义事件
 
 1. 无区分大小写，最好使用中横线命名, 因为驼峰会自动转成中横线
 2. 子组件调用父组件传入的自定义事件 this.\$emit(时间名,参数)
 3. 父组件定义事件属性，实现函数调用获取参数
+
+### 自定义 model
+
+v-model 是 v-bind 和 v-on 配合使用的语法糖；
+
+1. 在组件中定义 model, 注意 model 中的 prop 没有 's'
+
+```js
+  props: ["demo"],
+  model: {
+    event: "setdemo",
+    prop: "demo",
+  },
+```
+
+2. 设置 props 接收属性
+3. 在组件内触发事件 `this.$emit("setdemo", Date.now());` 更新值

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>props</p>
+    <p>获取props属性和非props属性</p>
   </div>
 </template>
 
