@@ -2,7 +2,8 @@
   <div>
     <h3>复用</h3>
     <!-- <MixinReuse /> -->
-    <CustomDirective />
+    <!-- <CustomDirective /> -->
+    <FilterFormat />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import utils from "../utils";
 import MixinReuse from "./MixinReuse.vue";
 import CustomDirective from "./CustomDirective.vue";
+import FilterFormat from "./FilterFormat.vue";
 export default {
   data: function() {
     return {
@@ -20,6 +22,7 @@ export default {
   components: {
     MixinReuse,
     CustomDirective,
+    FilterFormat,
   },
 
   methods: {},
