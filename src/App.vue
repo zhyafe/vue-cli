@@ -3,7 +3,8 @@
     <!-- <Template /> -->
     <!-- <ComputedWatch /> -->
     <!-- <ClassStyle /> -->
-    <Components />
+    <!-- <Components /> -->
+    <MixinReuse />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Template from "./template/Index";
 import ComputedWatch from "./computedWatch/Index";
 import ClassStyle from "./classStyle/Index";
 import Components from "./component/Index";
+import MixinReuse from "./reuse/Index";
 
 export default {
   name: "App",
@@ -21,6 +23,7 @@ export default {
     ComputedWatch,
     ClassStyle,
     Components,
+    MixinReuse,
   },
 };
 </script>
